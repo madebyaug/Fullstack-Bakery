@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+a {
+    color: #bf0000;
+}
+
+a:hover {
+    color: #000;
+}
+
+article, body, header, nav, main, ul, footer, aside, figure {
+    display: flex;
+}
+
+article h1 {
+    text-transform: capitalize;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+aside li, article, footer {
+    color: white;
+}
+
+aside li {
+    background-color: #bf0000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+body {
+    height: 100vh;
+}
+
+body, ul, article, aside, figure {
+    flex-direction: column;
+}
+
+footer {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+figure.testimonial {
+    padding: 20px;
+    font-style: italic;
+    background-color: whitesmoke;
+    color: #999;
+}
+
+header {
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+header, main, article, aside {
+    margin-top: 13px;
+}
+
+header p {
+    font: bold 35px/30px sans-serif;
+    letter-spacing: -1px;
+    color: #bf0000;
+}
+
+main {
+    flex-grow: 1;
+    gap: 20px;
+    background-color: #999;
+    padding: 0 10px;
+}
+
+nav, header {
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+nav, ul, article, header {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+ul {
+    width: 120px;
+}
